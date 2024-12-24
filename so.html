@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styles for body and container */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header styles */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .car-listing {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+            width: 48%;
+            text-align: center;
+        }
+
+        .car-listing img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .car-listing h2 {
+            background: #333;
+            color: #fff;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .car-listing p {
+            padding: 15px;
+            background: #f7f7f7;
+        }
+
+        .car-listing .price {
+            font-size: 1.5em;
+            color: #ff6347;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .car-listing .details-button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+
+        .car-listing .details-button:hover {
+            background-color: #333;
+        }
+
+        /* Footer styles */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            margin-top: 50px;
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-button {
+            background-color: #ff6347;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            display: block;
+            width: 100%;
+        }
+
+        .form-button:hover {
+            background-color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Car Dealership</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="main-content" id="cars">
+            <div class="car-listing">
+                <img src="automobile-4828388_1280.jpg" alt="Car 1">
+                <h2>2021 Toyota Camry</h2>
+                <p>Great condition, low mileage, perfect family sedan.</p>
+                <div class="price">$25,000</div>
+                <button class="details-button">View Details</button>
+            </div>
+
+            <div class="car-listing">
+                <img src="honda-civic-si-6560708_1280.jpg" alt="Car 2">
+                <h2>2020 Honda Accord</h2>
+                <p>Stylish, spacious, and fuel-efficient.</p>
+                <div class="price">$22,500</div>
+                <button class="details-button">View Details</button>
+            </div>
+
+            <div class="car-listing">
+                <img src="dare-7108955_1280.jpg" alt="Car 3">
+                <h2>2019 BMW 3 Series</h2>
+                <p>Luxury and performance in one vehicle.</p>
+                <div class="price">$35,000</div>
+                <button class="details-button">View Details</button>
+            </div>
+
+            <div class="car-listing">
+                <img src="tesla-5919764_1280.jpg" alt="Car 4">
+                <h2>2022 Tesla Model S</h2>
+                <p>Futuristic design, fully electric, incredible performance.</p>
+                <div class="price">$75,000</div>
+                <button class="details-button">View Details</button>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form" id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <input typ
